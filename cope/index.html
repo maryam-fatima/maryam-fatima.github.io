@@ -70,7 +70,7 @@
             <li>Have we been loaded by multi-boot 2 boot loader?</li>
             <li>Does CPU support cpu-id?</li>
         </ol>
-        <h3>1. Have we been loaded by multi-boot 2 boot loader?</h3>
+        <h4>1. Have we been loaded by multi-boot 2 boot loader?</h4>
         <p>We created the subroutine check multi boot for this purpose. Any bootloader stores the magic value in eax register. If the content of eax is not equal on comparison we jump to no_multiboot label, where we move the letter ‘M’ (multi-boot) and jump to label error to print “ERR: M” on screen and then halt the CPU. Else check for cpu-id.</p>
         <img src= "/cope/img/4.png">
         <h4>2. Does CPU support cpu-id?</h4>
